@@ -4,12 +4,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-} 
+  scroll-behavior: smooth;
+}
+body{
+  background: #000000
+}
 nav{
   display: flex;
   height: 80px;
   width: 100%;
-  background: #1b1b1b;
+  background: #286068;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -31,7 +35,7 @@ li{
 nav ul li a{
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   padding: 8px 15px;
   border-radius: 5px;
@@ -107,17 +111,42 @@ input[type="checkbox"]{
 
 */
 .content{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
   text-align: center;
   z-index: -1;
-  width: 100%;
-  padding: 0 30px;
-  color: #1b1b1b;
+  color: #434343;
+  margin-top:40px;
 }
 .content div{
-  font-size: 40px;
   font-weight: 700;
+}
+
+.in{
+  padding-bottom: 20px;
+}
+
+.divi {
+   font-family: Concert One, monospace;
+   color: #fff;
+   font-size: 5vh;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, .45);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px
+}
+
+ .divi::before, .divi::after {
+   content: '';
+   display: block;
+   height: 0.09em;
+   min-width: 40vw;
+}
+ .divi::before {
+   background: linear-gradient(to right, #71B280, #134E5E);
+   margin-right: 4vh;
+}
+ .divi::after {
+   background: linear-gradient(to left, #71B280, #134E5E);
+   margin-left: 4vh;
 }
