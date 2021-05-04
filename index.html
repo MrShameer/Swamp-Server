@@ -4,10 +4,20 @@
     <meta charset="utf-8">
     <title>Swamp Cinema : The Full Experience</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="#">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+			  $('.img').magnificPopup({type:'image'});
+			});
+  	</script>
     <nav>
       <div class="logo">Swamp Server</div>
       <!--input type="checkbox" id="click">
@@ -18,7 +28,7 @@
         <!--li><a class="active" href="#">Home</a></li-->
         <li><a href="#Overview">Overview</a></li>
         <li><a href="#Cinema">Cinema</a></li>
-        <li><a href="#Set">Setting up RTMP Server </a></li>
+        <li><a href="#Rtmp">Setting up RTMP Server </a></li>
         <li><a href="#PA">Points & Activities </a></li>
         <li><a href="#Community">Community</a></li>
         <li><a href="#SH">Server History</a></li>
@@ -26,13 +36,20 @@
       </ul>
     </nav>
 
-    <div class="content">
+    <div class="hide" id="map_4D85448A3D4C4180A02BD6FC387ABC45"></div>
+
+    <div class="contents">
     	<div id="Overview">
     		<div class="divi">Overview</div>
     		<div class="in" id="fst">
     			Swamp Cinema is a casual, social gamemode where players hang out in a virtual movie theater and watch videos. On ours, there's lots of fun stuff to do outside of the theaters. Start a game of chess, checkers, golf, or dodgeball. Or save up your pointshop points, pick up some weapons, and start a war!
+    			<br>
 
-    			<br/>IMAGE<br>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" title="Swamp Cinema">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" alt="Swamp Cinema" height="50%" width="50%">
+    			</a>
+    			
+    			<br>
     			Swamp Cinema's popularity comes from both it's lightweight initial downloads,
 				and it's addictive, constantly growing playerbase who keep coming back for more chaotic fun.
     		</div>
@@ -48,6 +65,10 @@
     		</div>
     		<div class="in">
     			<h1>Map</h1>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114404213/1347BB13EE2D9F32CFCE6C0EBD7B19F36B75F2CD/" title="Map">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114404213/1347BB13EE2D9F32CFCE6C0EBD7B19F36B75F2CD/" alt="Map" height="50%" width="50%">
+    			</a>
+    			<br>
     			The current Swamp Cinema map is a highly customized cinema game mode map named cinema_swamp_v3 which consists of :
 				-13 private theaters
 				-9 public theaters
@@ -63,41 +84,68 @@
     		<div class="in">
     			<h1>Special Locations</h1>
 
-    			The Underworld
+    			<h2>The Underworld</h2>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/780728477808325749/F5C0E0D065328B44F4194A1792094691137AF1B3/" title="Underworld">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/780728477808325749/F5C0E0D065328B44F4194A1792094691137AF1B3/" alt="Underworld" height="50%" width="50%">
+    			</a>
+    			<br>
+
     			Hang out with your pony friends in this human-free zone
 
     			(Warning: you cannot accept teleport requests
     			in this place unless you have your own separate theater there).
 
-    			Trump Tower
+    			<br>
+    			<h2>Trump Tower</h2>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114616397/B1D388358B70354E8ABE0732C31430ACEDBF13AF/" title="Trump Tower">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114616397/B1D388358B70354E8ABE0732C31430ACEDBF13AF/" alt="Trump Tower" height="50%" width="50%">
+    			</a>
+    			<br>
     			Relax in the Trump Tower lobby thanks to the talented piano players.
     			Try out your chess and checkers skills against other players!
     			There is an elevator that will take you up
     			the 4 other floors in which you can setup
     			your very own theaters or gamble your points at the arcade!
 
-    			The Movie Theater
+    			<h2>The Movie Theater</h2>
+    			
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1662353909238878150/0C5AD5F0E809CB4529917DD5AADE2CCE178331F7/" title="Movie Theater">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1662353909238878150/0C5AD5F0E809CB4529917DD5AADE2CCE178331F7/" alt="Movie Theater" height="50%" width="50%">
+    			</a>
+    			<br>
+    			
     			The Movie Theater is the main space for movie nights. This is a safe zone where
     			everyone can sit down and relax without having to worry about getting killed.
 
     			It is also the place where a lot of players choose to AFK, therefore, you will
     			rarely be able to vote-skip videos due to the sheer amount of players in this theater.
 
+    			<h2>The Knife Pit</h2>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114626137/B752C9D2208951337424F4916EBE87F3584BAA7E/" title="Knife Pit">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114626137/B752C9D2208951337424F4916EBE87F3584BAA7E/" alt="Knife Pit" height="50%" width="50%">
+    			</a>
+    			<br>
+    			
 
-    			The Knife Pit
     			Try out your melee skills in this pvp-specific arena located right outside of the main lobby.
 
     			Warning, this is not for the faint of heart, as there are quite a lot of talented players
     			around the server that know many ways of killing, even with just a knife.
 
+    			<h2>The Moon</h2>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/780728477808355697/073531B6A3281512AD002541E4692372A236C34F/" title="Moon">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/780728477808355697/073531B6A3281512AD002541E4692372A236C34F/" alt="Moon" height="50%" width="50%">
+    			</a>
+    			<br>
 
-
-    			The Moon
     			The rocket in the center of the pit will take you up to the moon, which is a special place where players can relax in a confined and sealed theater
 
+    			<h2>The Mines</h2>
+    			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114589757/DBE544AD1A462CF4B959831F3ACE6D35CB053499/" title="Mines">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114589757/DBE544AD1A462CF4B959831F3ACE6D35CB053499/" alt="Mines" height="50%" width="50%">
+    			</a>
+    			<br>
 
-
-    			The Mines
     			The mines are filled with diamond ore thirsty players swinging their pickaxes.
 
     			Here, you can mine for points, or gather some blocks and build whatever you desire.
@@ -114,6 +162,11 @@
     			You need to make sure that you are on the x86-64 - Chromium + 64-bit binaries beta for Garry's Mod and that the Garry's Mod: CEF Codec Fix is applied to your game.
 
 				The steps to do this are listed by pressing F2 while on the server.
+				
+				<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001116293038/490EE3577A45068B2E3813CBF420F44E497408D3/" title="Initial Steps">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001116293038/490EE3577A45068B2E3813CBF420F44E497408D3/" alt="Initial Steps" height="50%" width="50%">
+    			</a>
+    			<br>
     		</div>
     		<div class="in">
     			<h1>Queuing Videos</h1>

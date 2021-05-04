@@ -18,6 +18,8 @@ nav{
   justify-content: space-between;
   padding: 0 50px 0 100px;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0px;
 }
 .logo{
   color: #fff;
@@ -110,12 +112,19 @@ input[type="checkbox"]{
 }
 
 */
-.content{
-  position: absolute;
+.hide {
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+    visibility: hidden;
+
+}
+.contents{
+  position: relative;
   text-align: center;
   z-index: -1;
   color: #434343;
-  margin-top:40px;
+  padding-top:120px;
 }
 .content div{
   font-weight: 700;
@@ -124,6 +133,12 @@ input[type="checkbox"]{
 .in{
   padding-bottom: 20px;
 }
+
+h2{
+  padding-top: 20px;
+}
+
+
 
 .divi {
    font-family: Concert One, monospace;
