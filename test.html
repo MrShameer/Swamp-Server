@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	
+	<title>Magnific Demo</title>
+	
+	<!-- Just some styles to make our thumbnails look better -->
+	<style type="text/css" media="screen">
+		.lightbox {width: 100%; overflow: auto;}
+		section {clear: both;}
+		.gallery figure {float: left; margin: 20px; border: 1px #aaa solid;}
+		img {border: none;}
+
+
+		/* Add in animation effects */
+		/* overlay at start */
+		.mfp-fade.mfp-bg {
+		  opacity: 0;
+
+		  -webkit-transition: all 0.15s ease-out;
+		  -moz-transition: all 0.15s ease-out;
+		  transition: all 0.15s ease-out;
+		}
+		/* overlay animate in */
+		.mfp-fade.mfp-bg.mfp-ready {
+		  opacity: 0.8;
+		}
+		/* overlay animate out */
+		.mfp-fade.mfp-bg.mfp-removing {
+		  opacity: 0;
+		}
+
+		/* content at start */
+		.mfp-fade.mfp-wrap .mfp-content {
+		  opacity: 0;
+
+		  -webkit-transition: all 0.15s ease-out;
+		  -moz-transition: all 0.15s ease-out;
+		  transition: all 0.15s ease-out;
+		}
+		/* content animate it */
+		.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+		  opacity: 1;
+		}
+		/* content animate out */
+		.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+		  opacity: 0;
+		}
+	</style>
+
+
+	<!-- This is the CSS included for Magnific -->
+		<link rel="stylesheet" href="magnific-popup.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+	
+	<h1>Magnific Image Gallery</h1>
+	
+	<section>
+		<h2>Single Image (without gallery)</h2>
+
+		<div class="gallery">
+				<a href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" class="lightbox" title="this is the caption"><img src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" alt="A doodle" /></a>
+		</div>
+	</section>
+
+
+
+<!-- This includes the Google hosted jQuery framework -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- This includes the actual Magnific code (minified) -->
+	<script type="javascript" src="jquery.magnific-popup.min.js"></script>
+	
+	<script>
+		// First Example Group
+		$(document).ready(function($) {
+			$('.lightbox').magnificPopup({ 
+				type: 'image',
+				// other options here
+				// end each line with a comma
+			});
+		});
+
+		// Second Example Group
+		$(document).ready(function() {
+			$('.lightbox-doodles').magnificPopup({ 
+				type: 'image',
+				gallery:{enabled:true},
+				// other options
+				// end each line with a comma
+			});
+		});
+
+
+		// Third Example Group
+		$(document).ready(function() {
+			$('.doodles').magnificPopup({ 
+				type: 'image',
+				gallery:{enabled:true},
+				removalDelay: 300,			// Delay in milliseconds before popup is removed
+				mainClass: 'mfp-fade',		// Class that is added to popup wrapper and background
+				// other options
+			});
+	});
+	</script>
+
+</body>
+</html>
