@@ -4,19 +4,24 @@
     <meta charset="utf-8">
     <title>Swamp Cinema : The Full Experience</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="shortcut icon" href="#">
 
+    <link rel="stylesheet" href="magnific-popup.css" media="screen" />
+    
+
+	<link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-  	<script type="text/javascript">
-  		$(document).ready(function() {
-			  $('.img').magnificPopup({type:'image'});
-			});
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.magnific-popup.min.js"></script>
+  	<script>
+  		 $(document).ready(function() {
+          $('.img').magnificPopup({ 
+             type: 'image'
+             // other options here
+             // end each line (except the last) with a comma
+          });
+       });
   	</script>
     <nav>
       <div class="logo">Swamp Server</div>
@@ -36,17 +41,17 @@
       </ul>
     </nav>
 
-    <div class="hide" id="map_4D85448A3D4C4180A02BD6FC387ABC45"></div>
 
     <div class="contents">
-    	<div id="Overview">
+    	<span class="hide" id="Overview"></span>
+    	<div>
     		<div class="divi">Overview</div>
-    		<div class="in" id="fst">
+    		<div class="in">
     			Swamp Cinema is a casual, social gamemode where players hang out in a virtual movie theater and watch videos. On ours, there's lots of fun stuff to do outside of the theaters. Start a game of chess, checkers, golf, or dodgeball. Or save up your pointshop points, pick up some weapons, and start a war!
     			<br>
 
     			<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" title="Swamp Cinema">
-    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" alt="Swamp Cinema" height="50%" width="50%">
+    				<img src="https://steamuserimages-a.akamaihd.net/ugc/1494586001114344197/662B64E07A8F233966D47FE6B6D6BF002AE1ED80/" alt="Swamp Cinema" height="50%" width="50%">
     			</a>
     			
     			<br>
@@ -154,7 +159,8 @@
     		</div>
     	</div>
     	
-    	<div id="Cinema">
+    	<span class="hide" id="Cinema"></span>
+    	<div>
     		<div class="divi">Cinema</div>
     		Swamp Cinema requires a few steps to be done first to ensure full functionality.
     		<div class="in">
@@ -173,9 +179,19 @@
     			Once those 2 steps correctly done, the server will offer you so many possibilities
 				that you will probably not find elsewhere, in terms of watching videos on a gmod server.
 
+				<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/780728477807747599/0372E081AFF329A58700544F820B87F50796FCA3/" title="Queuing Videos">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/780728477807747599/0372E081AFF329A58700544F820B87F50796FCA3/" alt="Queuing Videos" height="50%" width="50%">
+    			</a>
+    			<br>
+
 				These options involve YouTube's entire spectrum of functionalities including it's HTML5 videos and YouTube livestreams.
 
-				(Thanks to the codecs patch made by WinterPhoenix96, who is known to be the Lead Developer behind the Yuki Cinema Server)
+				(Thanks to the codecs patch made by <a href="https://steamcommunity.com/id/WinterPhoenix96">WinterPhoenix96</a> , who is known to be the Lead Developer behind the Yuki Cinema Server)
+
+				<a class="img" href="https://steamuserimages-a.akamaihd.net/ugc/1494586001116329634/3086FFA24E4892F9B7DF1B8C7F02B51B4CE75FD1/" title="Queuing Videos">
+    				<img class="img" src="https://steamuserimages-a.akamaihd.net/ugc/1494586001116329634/3086FFA24E4892F9B7DF1B8C7F02B51B4CE75FD1/" alt="Queuing Videos" height="50%" width="50%">
+    			</a>
+    			<br>
 
 				If these are not enough, there are also possibilities of queuing videos from different hosting services such as:
 
