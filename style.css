@@ -162,7 +162,7 @@ h2{
    content: '';
    display: block;
    height: 0.09em;
-   min-width: 40vw;
+   min-width: 20vw;
 }
  .divi::before {
    background: linear-gradient(to right, #71B280, #134E5E);
