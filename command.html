@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Swamp Cinema Commands</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="design.css">
+</head>
+<body>
+  
+
+  <div class="container-fluid text-center" id="add">
+    
+    <script type="text/javascript">
+      var com = ["/help","/join","/rules","/donate","/tp <PLAYER>","/tpa","/givepoints <PLAYER> <AMOUNT>","/deaths","/kills","/points","/playtime","/8ball <QUESTION>","/roll <AMOUNT>","/coinflip <PLAYER> <AMOUNT>","/lotto","/vote","/editpony","/kill","/bounty <PLAYER> <AMOUNT>","/bountyrandom <AMOUNT>","/bountyall <AMOUNT>","/stuck","/drop","/image <QUERY>","/gif <QUERY>","[url:<URL>]"];
+
+      var ep = [];
+      function makeblock(cmd, exp) {
+        let adds=[
+        '<div class="col-sm">',
+        '<span></span>',
+        '<div class="content">',
+        '<h2>'+cmd+'</h2>',
+        '<p>'+exp+'</p>',
+        '</div>',
+        '</div>'
+        ]
+
+        return adds.join('\n');
+      }
+
+      function rows(i){
+        return('<div class="row" id="'+i+'">');
+      }
+
+      function rowd(){
+        return('</div>');
+      }
+
+      var coll=4;
+      var cur=0;
+      for(i=0;i<com.length;i+=1){
+        if(i%coll==0){
+          cur=i;
+          $(String('#add')).append(rows(i));
+        }
+        $(String('#'+cur+'')).append(makeblock(com[i],"ep[i]"));
+        if(i%coll-1==0){
+          $(String('#add')).append(rowd);
+        }
+      }
+
+    </script>
+  </div>
+</body>
+</html>
