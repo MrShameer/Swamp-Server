@@ -65,10 +65,6 @@
 
 		<script type="text/javascript">
 
-			var cmdg = ["/help","/join","/rules","/donate","/tp &lt;PLAYER&gt;","/tpa","/editpony","/kill","/stuck","/drop"];
-
-			var msgg = ["Open this help page","Join our Steam group and double your points per minute","View the server rules","Donate money for in-game points and to show support","Requests a teleport to a player","Accepts a requested teleport to you","Edit your pony player model","Kills your player","Kills your player if you're stuck","Deletes your current weapon (does NOT \"drop\" it to be picked up)"];
-
 			function gen(cmd, msg) {
 				let adds=[
 				'<hr>',
@@ -79,11 +75,15 @@
 				];
 				return adds.join('\n');
 			}
+			
+
+			var cmdg = ["/help","/join","/rules","/donate","/tp &lt;PLAYER&gt;","/tpa","/editpony","/kill","/stuck","/drop"];
+
+			var msgg = ["Open this help page","Join our Steam group and double your points per minute","View the server rules","Donate money for in-game points and to show support","Requests a teleport to a player","Accepts a requested teleport to you","Edit your pony player model","Kills your player","Kills your player if you're stuck","Deletes your current weapon (does NOT \"drop\" it to be picked up)"];
 
 			for (var i = 0; i < cmdg.length; i++) {
 				$(String('.General')).append(gen(cmdg[i],msgg[i]));
 			}
-
 
 
 			var cmdc = ["/vote","/image &lt;QUERY&gt;","/gif &lt;QUERY&gt;","[url:&lt;URL&gt;]"];
@@ -95,20 +95,18 @@
 			}
 
 
+			var cmds = ["/deaths","/kills","/playtime"];
 
-			var cmds = ["/deaths","/kills"];
-
-			var msgs = ["Shows your death count in chat","Shows your kill count in chat"];
+			var msgs = ["Shows your death count in chat","Shows your kill count in chat","Shows your playtime in global chat"];
 
 			for (var i = 0; i < cmds.length; i++) {
 				$(String('.Stats')).append(gen(cmds[i],msgs[i]));
 			}
 
 
+			var cmdp = ["/8ball &lt;QUESTION&gt;","/roll &lt;AMOUNT&gt;","/coinflip &lt;PLAYER&gt; &lt;AMOUNT&gt;","/lotto","/givepoints &lt;PLAYER&gt; &lt;AMOUNT&gt;","/points","/bounty &lt;PLAYER&gt; &lt;AMOUNT&gt;","/bountyrandom &lt;AMOUNT&gt;","/bountyall &lt;AMOUNT&gt;"];
 
-			var cmdp = ["/playtime","/8ball &lt;QUESTION&gt;","/roll &lt;AMOUNT&gt;","/coinflip &lt;PLAYER&gt; &lt;AMOUNT&gt;","/lotto","/givepoints &lt;PLAYER&gt; &lt;AMOUNT&gt;","/points","/bounty &lt;PLAYER&gt; &lt;AMOUNT&gt;","/bountyrandom &lt;AMOUNT&gt;","/bountyall &lt;AMOUNT&gt;"];
-
-			var msgp = ["Shows your playtime in global chat","Ask the magic 8-ball a question","Gamble points (points lost will NOT be reimbursed)","Coinflip another player","Bet points in the lottery","Gives a player a specified amount of points","Shows your points in global chat","Places a bounty on a player (you can bounty yourself)","Places a bounty on a random player","Places a bounty on everyone"];
+			var msgp = ["Ask the magic 8-ball a question","Gamble points (points lost will NOT be reimbursed)","Coinflip another player","Bet points in the lottery","Gives a player a specified amount of points","Shows your points in global chat","Places a bounty on a player (you can bounty yourself)","Places a bounty on a random player","Places a bounty on everyone"];
 
 			for (var i = 0; i < cmdp.length; i++) {
 				$(String('.Points')).append(gen(cmdp[i],msgp[i]));
