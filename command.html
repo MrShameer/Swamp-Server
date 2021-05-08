@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -12,13 +13,18 @@
 </head>
 <body>
   
-
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Commands</h1>
+    <p class="lead">List of commands, player can use in the server</p>
+  </div>
+</div>
   <div class="container-fluid text-center" id="add">
     
     <script type="text/javascript">
       var com = ["/help","/join","/rules","/donate","/tp <PLAYER>","/tpa","/givepoints <PLAYER> <AMOUNT>","/deaths","/kills","/points","/playtime","/8ball <QUESTION>","/roll <AMOUNT>","/coinflip <PLAYER> <AMOUNT>","/lotto","/vote","/editpony","/kill","/bounty <PLAYER> <AMOUNT>","/bountyrandom <AMOUNT>","/bountyall <AMOUNT>","/stuck","/drop","/image <QUERY>","/gif <QUERY>","[url:<URL>]"];
 
-      var ep = [];
+      var ep = ["Open this help page","Join our Steam group and double your points per minute","View the server rules","Donate money for in-game points and to show support","Requests a teleport to a player","Accepts a requested teleport to you","Gives a player a specified amount of points","Shows your death count in chat","Shows your kill count in chat","Shows your points in global chat","Shows your playtime in global chat","Ask the magic 8-ball a question","Gamble points (points lost will NOT be reimbursed)","Coinflip another player","Bet points in the lottery","Opens a menu that allows you to start a vote","Edit your pony player model","Kills your player","Places a bounty on a player (you can bounty yourself)","Places a bounty on a random player","Places a bounty on everyone","Kills your player if you're stuck","Deletes your current weapon (does NOT \"drop\" it to be picked up)","Deletes your current weapon (does NOT \"drop\" it to be picked up)","Search and display an image","Search and display a GIF","Post a specific image in chat (note: no / and no space)"];
       function makeblock(cmd, exp) {
         let adds=[
         '<div class="col-sm">',
@@ -48,7 +54,7 @@
           cur=i;
           $(String('#add')).append(rows(i));
         }
-        $(String('#'+cur+'')).append(makeblock(com[i],"ep[i]"));
+        $(String('#'+cur+'')).append(makeblock(com[i],ep[i]));
         if(i%coll-1==0){
           $(String('#add')).append(rowd);
         }
