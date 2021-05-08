@@ -19,7 +19,18 @@ body{
 .jumbotron{
 	padding: 10px 0;
 	background: linear-gradient(315deg, #4dff03, #00d0ff);
+	background: #286068;
 }
+
+#code{
+	max-width: 30%;
+	border-radius: 25px;
+}
+
+.code{
+	padding: 10px 10px;
+}
+
 
 #add{
 	position: relative;
