@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Righteous, Concert One, Consolas, Montserrat, sans-serif;
+  font-family: Righteous, Concert One;
   scroll-behavior: smooth;
 }
 body{
-  background: #fff;
+  background: #111;
   font: 20px Concert One, sans-serif;
   line-height: 1.8;
+  
 }
 nav{
   display: flex;
@@ -58,7 +59,7 @@ nav ul li a:hover{
 .hide {
     display: block;
     height: 80px;
-    margin-top: 50px;
+    margin-top: 10px;
     visibility: hidden;
 }
 
@@ -69,4 +70,29 @@ nav ul li a:hover{
 
 .code{
   padding: 10px 10px;
+}
+
+.command{
+  padding: 0px 400px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+hr{
+    height: 4px;
+    background-color: #286068;
+    border: none;
+}
+
+h5{
+  margin: 0px 30px;
+  padding: 0px 10px;
+  border: 2px outset #ccc;
+  border-radius: 10px;
+  display: inline;
+
+}
+
+p{
+  padding: 0px 70px;
 }
