@@ -84,8 +84,20 @@ hr{
     border: none;
 }
 
+.command div div ~ hr{
+  background-color: #122a2e;
+  height: 3px;
+  margin-left: 30px;
+
+}
+
+.command div div hr:nth-child(2){
+  height: 0px;
+
+}
+
 h5{
-  margin: 0px 30px;
+  margin: 0px 40px;
   padding: 0px 10px;
   border: 2px outset #ccc;
   border-radius: 10px;
@@ -93,5 +105,5 @@ h5{
 }
 
 p{
-  padding: 0px 70px;
+  padding: 0px 90px;
 }
